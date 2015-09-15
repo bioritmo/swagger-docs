@@ -26,6 +26,14 @@ module Swagger
           Rails.application
         end
 
+        def register_multiple_apis(versions)
+          @multiple_apis = versions
+        end
+
+        def registered_multiple_apis
+          @multiple_apis || []
+        end
+
         def register_apis(versions)
           base_api_controllers.each do |controller|
             controller.send(:include, ImpotentMethods)
