@@ -1,3 +1,4 @@
+require "redcarpet"
 require "swagger/docs/config"
 require "swagger/docs/dsl"
 require "swagger/docs/api_declaration_file_metadata"

@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency "rails", ">= 3","< 5"
   spec.add_runtime_dependency "activesupport", ">= 3","< 5"
+  spec.add_runtime_dependency "redcarpet", "~> 3.3.2"
 end

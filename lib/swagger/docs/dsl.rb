@@ -18,7 +18,8 @@ module Swagger
       end
 
       def notes(text)
-        @notes = text
+        markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+        @notes   = markdown.render(text)
       end
 
       def method(method)
